@@ -14,11 +14,25 @@
 
     <div id="game">
       <section>
-        <h3>Seu palpite:</h3>
-        <input type="number">
+        <h3 id="guessBox">Seu palpite:</h3>
+        <input type="number" id="inputBox">
       </section>
 
+      <section class="stats">
+        <div class="info">
+          <h4>Número de tentativas:</h4>
+          <span id="attempts">0</span>
+        </div>
+
+        <div class="info">
+          <h4>Seus palpites</h4>
+          <span id="guesses">0</span>
+        </div>
+      </section>
+
+      <button id="gameButton">NOVO JOGO</button>
     </div>
   </main>
+  <script src="/assets/js/app.js"></script>
 </body>
 </html>
