@@ -26,9 +26,19 @@ body > main {
   transform: translate(-50%, -50%);
   width: 450px;
 }
+@media only screen and (max-width: 767px) {
+  body > main {
+    width: 350px;
+  }
+}
 body > main > #homeScreen > h1, body > main > #homeScreen h2 {
   font-size: 2rem;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  body > main > #homeScreen > h1, body > main > #homeScreen h2 {
+    font-size: 1.5rem;
+  }
 }
 body > main > #game > section {
   text-align: center;
@@ -37,6 +47,11 @@ body > main > #game > section > #guessBox {
   font-size: 1.2rem;
   margin: 1rem 0;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  body > main > #game > section > #guessBox {
+    font-size: 1rem;
+  }
 }
 body > main > #game > section > #inputBox {
   background-color: #48524a;
@@ -54,6 +69,11 @@ body > main > #game > .stats .info {
   font-size: 1.2rem;
   justify-content: space-between;
   margin: 1.5rem 0;
+}
+@media only screen and (max-width: 767px) {
+  body > main > #game > .stats .info {
+    font-size: 1rem;
+  }
 }
 body > main > #game > #gameButton {
   background-color: #6da014;
