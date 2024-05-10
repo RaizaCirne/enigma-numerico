@@ -13,15 +13,22 @@
 
 // 6º Adicionar máximo de tentativas
 
+// 7º Usar o atributo setAttribute do tipo Readonly com string Readonly para desabilitar o campo de input quando o jogo acaba se eu acerto ou erro
+
 let machineNumber;
 let listNumbers = [];
 let attempts = 0;
 let maximumAttempts = 8;
 
+// Executar o reaload toda vez que clico no botão -> gameButton no html
+function newGame() {
+  window.location.reload();
+}
+
 // Ao carregar a página o computador escolhe um número
 function initialize() {
   machineNumber = Math.floor(Math.random() * 100 + 1);
-  // console.log(machineNumber);
+  console.log(machineNumber);
 }
 
 function compareValues() {
@@ -46,10 +53,12 @@ function compareValues() {
         "Parabéns! Você adivinhou 👏🥳";
       attempts++;
       document.getElementById("attempts").innerHTML = attempts;
+      document.getElementById("inputBox").setAttribute("Readonly", "Readonly");
     }
   } else {
     document.getElementById("guessBox").innerHTML =
       "Vish, você perdeu! 😵💀😢<br/> O número do compurador era " +
       machineNumber;
+    document.getElementById("inputBox").setAttribute("Readonly", "Readonly");
   }
 }
