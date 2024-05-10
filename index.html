@@ -19,7 +19,7 @@
     <div id="game">
       <section>
         <h3 id="guessBox">Seu palpite:</h3>
-        <input type="number" id="inputBox">
+        <input type="number" id="inputBox" min="1" max="100" onchange="compareValues()">
       </section>
 
       <section class="stats">
@@ -30,7 +30,7 @@
 
         <div class="info">
           <h4>Seus palpites</h4>
-          <span id="guesses">0</span>
+          <span id="guesses"></span>
         </div>
       </section>
 
