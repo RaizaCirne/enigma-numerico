@@ -11,9 +11,12 @@
 
 // 5º número de tentativas aumentar +1
 
+// 6º Adicionar máximo de tentativas
+
 let machineNumber;
 let listNumbers = [];
 let attempts = 0;
+let maximumAttempts = 8;
 
 // Ao carregar a página o computador escolhe um número
 function initialize() {
@@ -26,20 +29,27 @@ function compareValues() {
   listNumbers.push(" " + userValue);
   document.getElementById("guesses").innerHTML = listNumbers;
 
-  if (userValue > machineNumber) {
-    document.getElementById("guessBox").innerHTML = "Seu número é muito alto";
-    document.getElementById("inputBox").value = "";
-    attempts++;
-    document.getElementById("attempts").innerHTML = attempts;
-  } else if (userValue < machineNumber) {
-    document.getElementById("guessBox").innerHTML = "Seu número é muito baixo";
-    document.getElementById("inputBox").value = "";
-    attempts++;
-    document.getElementById("attempts").innerHTML = attempts;
+  if (attempts < maximumAttempts) {
+    if (userValue > machineNumber) {
+      document.getElementById("guessBox").innerHTML = "Seu número é muito alto";
+      document.getElementById("inputBox").value = "";
+      attempts++;
+      document.getElementById("attempts").innerHTML = attempts;
+    } else if (userValue < machineNumber) {
+      document.getElementById("guessBox").innerHTML =
+        "Seu número é muito baixo";
+      document.getElementById("inputBox").value = "";
+      attempts++;
+      document.getElementById("attempts").innerHTML = attempts;
+    } else {
+      document.getElementById("guessBox").innerHTML =
+        "Parabéns! Você adivinhou 👏🥳";
+      attempts++;
+      document.getElementById("attempts").innerHTML = attempts;
+    }
   } else {
     document.getElementById("guessBox").innerHTML =
-      "Parabéns! Você adivinhou 👏🥳";
-    attempts++;
-    document.getElementById("attempts").innerHTML = attempts;
+      "Vish, você perdeu! 😵💀😢<br/> O número do compurador era " +
+      machineNumber;
   }
 }
