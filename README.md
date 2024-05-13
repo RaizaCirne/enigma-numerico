@@ -58,7 +58,7 @@ Inserir vídeo
 
 <br />
 
-- Para acessar o site [Clique aqui](#)
+- Para acessar o site [Clique aqui](https://663f9f0b683dc4111be7625d--keen-pithivier-a97690.netlify.app/)
 
 <br />
 
@@ -106,7 +106,7 @@ Abrir pasta no editor de código.
 
 <br />
 
-- Personal Page - [Raíza Cirne Braz](#)
+- Personal Page - [Raíza Cirne Braz](https://663f9f0b683dc4111be7625d--keen-pithivier-a97690.netlify.app/)
 - Frontend Mentor - [@RaizaCirne](https://www.frontendmentor.io/profile/RaizaCirne)
 - GitHub - [RaizaCirne](https://github.com/RaizaCirne)
 - LinkedIn - [Raíza Cirne Braz](https://www.linkedin.com/in/ra%C3%ADzacirne/)

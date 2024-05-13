@@ -11,7 +11,7 @@ function newGame() {
 // Ao carregar a página o computador escolhe um número
 function initialize() {
   machineNumber = Math.floor(Math.random() * 100 + 1);
-  console.log(machineNumber);
+  // console.log(machineNumber);
 }
 
 function compareValues() {
@@ -44,7 +44,7 @@ function compareValues() {
       }
     } else {
       document.getElementById("guessBox").innerHTML =
-        "Vish, você perdeu! 😵💀😢<br/> O número do compurador era " +
+        "Vish, você perdeu! 😵💀😢<br/> O número do computador era " +
         machineNumber;
       document.getElementById("inputBox").setAttribute("Readonly", "Readonly");
     }
