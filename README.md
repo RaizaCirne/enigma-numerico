@@ -42,7 +42,7 @@ Um dos principais desafios foi o gerenciamento de tentativas. Definir e controla
 
 ## :video_camera: Video
 
-Inserir vídeo
+![enigma-numerico](https://github.com/RaizaCirne/enigma-numerico/assets/109912543/d7e2ab22-df6e-40fd-9721-d28bfe98de3e)
 
 ## :desktop_computer: Desktop design
 
